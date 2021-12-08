@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/build/devel/setup.sh
