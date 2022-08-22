@@ -6,9 +6,9 @@ CMakeFiles/test_vk_common_triangulation.dir/test/test_triangulation.cpp.o: ../in
 CMakeFiles/test_vk_common_triangulation.dir/test/test_triangulation.cpp.o: ../include/vikit/pinhole_camera.h
 CMakeFiles/test_vk_common_triangulation.dir/test/test_triangulation.cpp.o: ../include/vikit/sample.h
 CMakeFiles/test_vk_common_triangulation.dir/test/test_triangulation.cpp.o: ../include/vikit/timer.h
+CMakeFiles/test_vk_common_triangulation.dir/test/test_triangulation.cpp.o: ../test/test_triangulation.cpp
 CMakeFiles/test_vk_common_triangulation.dir/test/test_triangulation.cpp.o: /home/alex/ros/svo_ws/src/Sophus/sophus/se3.h
 CMakeFiles/test_vk_common_triangulation.dir/test/test_triangulation.cpp.o: /home/alex/ros/svo_ws/src/Sophus/sophus/so3.h
-CMakeFiles/test_vk_common_triangulation.dir/test/test_triangulation.cpp.o: ../test/test_triangulation.cpp
 CMakeFiles/test_vk_common_triangulation.dir/test/test_triangulation.cpp.o: /usr/local/include/eigen3/Eigen/Cholesky
 CMakeFiles/test_vk_common_triangulation.dir/test/test_triangulation.cpp.o: /usr/local/include/eigen3/Eigen/Core
 CMakeFiles/test_vk_common_triangulation.dir/test/test_triangulation.cpp.o: /usr/local/include/eigen3/Eigen/Dense

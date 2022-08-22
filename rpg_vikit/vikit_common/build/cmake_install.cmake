@@ -1,4 +1,4 @@
-# Install script for directory: /home/alex/ros/svo_ws/src/rpg_vikit/vikit_common
+# Install script for directory: /home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,115 +38,46 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  
-      if (NOT EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
-        file(MAKE_DIRECTORY "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
-      endif()
-      if (NOT EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/.catkin")
-        file(WRITE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/.catkin" "")
-      endif()
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/_setup_util.py")
+   "/usr/local/include/vikit")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local" TYPE PROGRAM FILES "/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/usr/local/include" TYPE DIRECTORY FILES "/home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/include/vikit" FILES_MATCHING REGEX "/[^/]*\\.h$")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}/usr/local/lib/libvikit_common.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/lib/libvikit_common.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}/usr/local/lib/libvikit_common.so"
+         RPATH "")
+  endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/env.sh")
+   "/usr/local/lib/libvikit_common.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local" TYPE PROGRAM FILES "/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/usr/local/lib" TYPE SHARED_LIBRARY FILES "/home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/lib/libvikit_common.so")
+  if(EXISTS "$ENV{DESTDIR}/usr/local/lib/libvikit_common.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/lib/libvikit_common.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}/usr/local/lib/libvikit_common.so"
+         OLD_RPATH "/usr/local/lib:/home/alex/ros/svo_ws/src/Sophus/build:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/usr/local/lib/libvikit_common.so")
+    endif()
+  endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/setup.bash;/usr/local/local_setup.bash")
-  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES
-    "/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/build/catkin_generated/installspace/setup.bash"
-    "/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/build/catkin_generated/installspace/local_setup.bash"
-    )
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/setup.sh;/usr/local/local_setup.sh")
-  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES
-    "/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/build/catkin_generated/installspace/setup.sh"
-    "/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/build/catkin_generated/installspace/local_setup.sh"
-    )
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/setup.zsh;/usr/local/local_setup.zsh")
-  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES
-    "/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/build/catkin_generated/installspace/setup.zsh"
-    "/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/build/catkin_generated/installspace/local_setup.zsh"
-    )
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/.rosinstall")
-  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES "/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/build/catkin_generated/installspace/.rosinstall")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/build/catkin_generated/installspace/vikit_common.pc")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vikit_common/cmake" TYPE FILE FILES
-    "/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/build/catkin_generated/installspace/vikit_commonConfig.cmake"
-    "/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/build/catkin_generated/installspace/vikit_commonConfig-version.cmake"
-    )
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vikit_common" TYPE FILE FILES "/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/package.xml")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/build/gtest/cmake_install.cmake")
-
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -157,5 +88,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

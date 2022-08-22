@@ -46,10 +46,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alex/ros/svo_ws/src/rpg_vikit/vikit_common
+CMAKE_SOURCE_DIR = /home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/build
+CMAKE_BINARY_DIR = /home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test_vk_common_patch_score.dir/depend.make
@@ -62,16 +62,16 @@ include CMakeFiles/test_vk_common_patch_score.dir/flags.make
 
 CMakeFiles/test_vk_common_patch_score.dir/test/test_patch_score.cpp.o: CMakeFiles/test_vk_common_patch_score.dir/flags.make
 CMakeFiles/test_vk_common_patch_score.dir/test/test_patch_score.cpp.o: ../test/test_patch_score.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_vk_common_patch_score.dir/test/test_patch_score.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_vk_common_patch_score.dir/test/test_patch_score.cpp.o -c /home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/test/test_patch_score.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_vk_common_patch_score.dir/test/test_patch_score.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_vk_common_patch_score.dir/test/test_patch_score.cpp.o -c /home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/test/test_patch_score.cpp
 
 CMakeFiles/test_vk_common_patch_score.dir/test/test_patch_score.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_vk_common_patch_score.dir/test/test_patch_score.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/test/test_patch_score.cpp > CMakeFiles/test_vk_common_patch_score.dir/test/test_patch_score.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/test/test_patch_score.cpp > CMakeFiles/test_vk_common_patch_score.dir/test/test_patch_score.cpp.i
 
 CMakeFiles/test_vk_common_patch_score.dir/test/test_patch_score.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_vk_common_patch_score.dir/test/test_patch_score.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/test/test_patch_score.cpp -o CMakeFiles/test_vk_common_patch_score.dir/test/test_patch_score.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/test/test_patch_score.cpp -o CMakeFiles/test_vk_common_patch_score.dir/test/test_patch_score.cpp.s
 
 # Object files for target test_vk_common_patch_score
 test_vk_common_patch_score_OBJECTS = \
@@ -80,72 +80,34 @@ test_vk_common_patch_score_OBJECTS = \
 # External object files for target test_vk_common_patch_score
 test_vk_common_patch_score_EXTERNAL_OBJECTS =
 
-devel/lib/vikit_common/test_vk_common_patch_score: CMakeFiles/test_vk_common_patch_score.dir/test/test_patch_score.cpp.o
-devel/lib/vikit_common/test_vk_common_patch_score: CMakeFiles/test_vk_common_patch_score.dir/build.make
-devel/lib/vikit_common/test_vk_common_patch_score: devel/lib/libvikit_common.so
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/local/lib/libopencv_objdetect.so.3.4.6
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/local/lib/libopencv_superres.so.3.4.6
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/local/lib/libopencv_dnn.so.3.4.6
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/local/lib/libopencv_viz.so.3.4.6
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/local/lib/libopencv_videostab.so.3.4.6
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/local/lib/libopencv_photo.so.3.4.6
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/local/lib/libopencv_ml.so.3.4.6
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/local/lib/libopencv_shape.so.3.4.6
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/local/lib/libopencv_video.so.3.4.6
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/local/lib/libopencv_stitching.so.3.4.6
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/local/lib/libopencv_calib3d.so.3.4.6
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/local/lib/libopencv_features2d.so.3.4.6
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/local/lib/libopencv_flann.so.3.4.6
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/local/lib/libopencv_highgui.so.3.4.6
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/local/lib/libopencv_videoio.so.3.4.6
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/local/lib/libopencv_imgcodecs.so.3.4.6
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/local/lib/libopencv_imgproc.so.3.4.6
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/local/lib/libopencv_core.so.3.4.6
-devel/lib/vikit_common/test_vk_common_patch_score: /home/alex/ros/svo_ws/src/Sophus/build/libSophus.so
-devel/lib/vikit_common/test_vk_common_patch_score: /opt/ros/kinetic/lib/libroscpp.so
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-devel/lib/vikit_common/test_vk_common_patch_score: /opt/ros/kinetic/lib/librosconsole.so
-devel/lib/vikit_common/test_vk_common_patch_score: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-devel/lib/vikit_common/test_vk_common_patch_score: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-devel/lib/vikit_common/test_vk_common_patch_score: /opt/ros/kinetic/lib/libroscpp_serialization.so
-devel/lib/vikit_common/test_vk_common_patch_score: /opt/ros/kinetic/lib/libxmlrpcpp.so
-devel/lib/vikit_common/test_vk_common_patch_score: /opt/ros/kinetic/lib/librostime.so
-devel/lib/vikit_common/test_vk_common_patch_score: /opt/ros/kinetic/lib/libcpp_common.so
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/lib/x86_64-linux-gnu/libboost_system.so
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/lib/x86_64-linux-gnu/libpthread.so
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-devel/lib/vikit_common/test_vk_common_patch_score: /opt/ros/kinetic/lib/libroscpp.so
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-devel/lib/vikit_common/test_vk_common_patch_score: /opt/ros/kinetic/lib/librosconsole.so
-devel/lib/vikit_common/test_vk_common_patch_score: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-devel/lib/vikit_common/test_vk_common_patch_score: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-devel/lib/vikit_common/test_vk_common_patch_score: /opt/ros/kinetic/lib/libroscpp_serialization.so
-devel/lib/vikit_common/test_vk_common_patch_score: /opt/ros/kinetic/lib/libxmlrpcpp.so
-devel/lib/vikit_common/test_vk_common_patch_score: /opt/ros/kinetic/lib/librostime.so
-devel/lib/vikit_common/test_vk_common_patch_score: /opt/ros/kinetic/lib/libcpp_common.so
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/lib/x86_64-linux-gnu/libboost_system.so
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/lib/x86_64-linux-gnu/libpthread.so
-devel/lib/vikit_common/test_vk_common_patch_score: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-devel/lib/vikit_common/test_vk_common_patch_score: CMakeFiles/test_vk_common_patch_score.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable devel/lib/vikit_common/test_vk_common_patch_score"
+../bin/test_vk_common_patch_score: CMakeFiles/test_vk_common_patch_score.dir/test/test_patch_score.cpp.o
+../bin/test_vk_common_patch_score: CMakeFiles/test_vk_common_patch_score.dir/build.make
+../bin/test_vk_common_patch_score: ../lib/libvikit_common.so
+../bin/test_vk_common_patch_score: /usr/local/lib/libopencv_objdetect.so.3.4.6
+../bin/test_vk_common_patch_score: /usr/local/lib/libopencv_superres.so.3.4.6
+../bin/test_vk_common_patch_score: /usr/local/lib/libopencv_dnn.so.3.4.6
+../bin/test_vk_common_patch_score: /usr/local/lib/libopencv_viz.so.3.4.6
+../bin/test_vk_common_patch_score: /usr/local/lib/libopencv_videostab.so.3.4.6
+../bin/test_vk_common_patch_score: /usr/local/lib/libopencv_photo.so.3.4.6
+../bin/test_vk_common_patch_score: /usr/local/lib/libopencv_ml.so.3.4.6
+../bin/test_vk_common_patch_score: /usr/local/lib/libopencv_shape.so.3.4.6
+../bin/test_vk_common_patch_score: /usr/local/lib/libopencv_video.so.3.4.6
+../bin/test_vk_common_patch_score: /usr/local/lib/libopencv_stitching.so.3.4.6
+../bin/test_vk_common_patch_score: /usr/local/lib/libopencv_calib3d.so.3.4.6
+../bin/test_vk_common_patch_score: /usr/local/lib/libopencv_features2d.so.3.4.6
+../bin/test_vk_common_patch_score: /usr/local/lib/libopencv_flann.so.3.4.6
+../bin/test_vk_common_patch_score: /usr/local/lib/libopencv_highgui.so.3.4.6
+../bin/test_vk_common_patch_score: /usr/local/lib/libopencv_videoio.so.3.4.6
+../bin/test_vk_common_patch_score: /usr/local/lib/libopencv_imgcodecs.so.3.4.6
+../bin/test_vk_common_patch_score: /usr/local/lib/libopencv_imgproc.so.3.4.6
+../bin/test_vk_common_patch_score: /usr/local/lib/libopencv_core.so.3.4.6
+../bin/test_vk_common_patch_score: /home/alex/ros/svo_ws/src/Sophus/build/libSophus.so
+../bin/test_vk_common_patch_score: CMakeFiles/test_vk_common_patch_score.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/test_vk_common_patch_score"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_vk_common_patch_score.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/test_vk_common_patch_score.dir/build: devel/lib/vikit_common/test_vk_common_patch_score
+CMakeFiles/test_vk_common_patch_score.dir/build: ../bin/test_vk_common_patch_score
 
 .PHONY : CMakeFiles/test_vk_common_patch_score.dir/build
 
@@ -154,6 +116,6 @@ CMakeFiles/test_vk_common_patch_score.dir/clean:
 .PHONY : CMakeFiles/test_vk_common_patch_score.dir/clean
 
 CMakeFiles/test_vk_common_patch_score.dir/depend:
-	cd /home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alex/ros/svo_ws/src/rpg_vikit/vikit_common /home/alex/ros/svo_ws/src/rpg_vikit/vikit_common /home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/build /home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/build /home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/build/CMakeFiles/test_vk_common_patch_score.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common /home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common /home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/build /home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/build /home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/build/CMakeFiles/test_vk_common_patch_score.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test_vk_common_patch_score.dir/depend
 

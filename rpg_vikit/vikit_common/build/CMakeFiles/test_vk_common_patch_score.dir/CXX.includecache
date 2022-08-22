@@ -30,7 +30,7 @@ stdio.h
 unistd.h
 -
 
-/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/test/test_patch_score.cpp
+/home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/test/test_patch_score.cpp
 stdio.h
 -
 opencv2/opencv.hpp

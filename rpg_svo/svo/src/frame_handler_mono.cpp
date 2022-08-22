@@ -55,8 +55,15 @@ FrameHandlerMono::~FrameHandlerMono()
   delete depth_filter_;
 }
 
+/**
+ * @description: svo主入口
+ * @param {Mat&} img
+ * @param {double} timestamp
+ * @return {*}
+ */
 void FrameHandlerMono::addImage(const cv::Mat& img, const double timestamp)
 {
+  // (1-1) 初始化阶段，将算法状态置为STAGE_FIRST_FRAME，同时重置状态位
   if(!startFrameProcessingCommon(timestamp))
     return;
 
@@ -65,6 +72,7 @@ void FrameHandlerMono::addImage(const cv::Mat& img, const double timestamp)
   overlap_kfs_.clear();
 
   // create new frame
+  // 创建当前图像帧
   SVO_START_TIMER("pyramid_creation");
   new_frame_.reset(new Frame(cam_, img.clone(), timestamp));
   SVO_STOP_TIMER("pyramid_creation");
@@ -88,20 +96,36 @@ void FrameHandlerMono::addImage(const cv::Mat& img, const double timestamp)
   finishFrameProcessingCommon(last_frame_->id_, res, last_frame_->nObs());
 }
 
+/**
+ * @description: 第一帧图像处理
+ * @param {*}
+ * @return {*}
+ */
 FrameHandlerMono::UpdateResult FrameHandlerMono::processFirstFrame()
 {
   new_frame_->T_f_w_ = SE3(Matrix3d::Identity(), Vector3d::Zero());
+  // 提取当前图像fast特征点和特征点对应的单位方向向量
   if(klt_homography_init_.addFirstFrame(new_frame_) == initialization::FAILURE)
     return RESULT_NO_KEYFRAME;
+  // 第一帧直接设置为关键帧
   new_frame_->setKeyframe();
   map_.addKeyframe(new_frame_);
+  // 状态切到第二帧
   stage_ = STAGE_SECOND_FRAME;
   SVO_INFO_STREAM("Init: Selected first frame.");
   return RESULT_IS_KEYFRAME;
 }
 
+
+/**
+ * @description: 第二帧图像处理
+ * @param {*}
+ * @return {*}
+ */
 FrameHandlerBase::UpdateResult FrameHandlerMono::processSecondFrame()
 {
+  // 采用klt光流跟踪生成第二帧图像中的特征点
+  // 假设Homography，并通过Homography计算第一帧和第二帧之间的相对位姿作为初始vo初始位姿
   initialization::InitResult res = klt_homography_init_.addSecondFrame(new_frame_);
   if(res == initialization::FAILURE)
     return RESULT_FAILURE;
@@ -112,7 +136,7 @@ FrameHandlerBase::UpdateResult FrameHandlerMono::processSecondFrame()
 #ifdef USE_BUNDLE_ADJUSTMENT
   ba::twoViewBA(new_frame_.get(), map_.lastKeyframe().get(), Config::lobaThresh(), &map_);
 #endif
-
+  // 计算关键帧对应初始平均深度（深度滤波器初始深度）
   new_frame_->setKeyframe();
   double depth_mean, depth_min;
   frame_utils::getSceneDepth(*new_frame_, depth_mean, depth_min);
@@ -120,6 +144,7 @@ FrameHandlerBase::UpdateResult FrameHandlerMono::processSecondFrame()
 
   // add frame to map
   map_.addKeyframe(new_frame_);
+  // 初始化成功，状态切为正常跟踪模式
   stage_ = STAGE_DEFAULT_FRAME;
   klt_homography_init_.reset();
   SVO_INFO_STREAM("Init: Selected second frame, triangulated initial map.");
@@ -135,6 +160,7 @@ FrameHandlerBase::UpdateResult FrameHandlerMono::processFrame()
   SVO_START_TIMER("sparse_img_align");
   SparseImgAlign img_align(Config::kltMaxLevel(), Config::kltMinLevel(),
                            30, SparseImgAlign::GaussNewton, false, false);
+  // 相邻两帧做sparse align
   size_t img_align_n_tracked = img_align.run(last_frame_, new_frame_);
   SVO_STOP_TIMER("sparse_img_align");
   SVO_LOG(img_align_n_tracked);

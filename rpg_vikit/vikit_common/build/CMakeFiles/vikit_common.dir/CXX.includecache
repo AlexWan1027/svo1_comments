@@ -164,19 +164,7 @@ Eigen/Core
 opencv2/opencv.hpp
 -
 
-/home/alex/ros/svo_ws/src/Sophus/sophus/se3.h
-so3.h
-/home/alex/ros/svo_ws/src/Sophus/sophus/so3.h
-
-/home/alex/ros/svo_ws/src/Sophus/sophus/so3.h
-Eigen/Core
--
-Eigen/StdVector
--
-Eigen/Geometry
--
-
-/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/src/atan_camera.cpp
+/home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/src/atan_camera.cpp
 stdio.h
 -
 iostream
@@ -192,7 +180,7 @@ vikit/atan_camera.h
 vikit/math_utils.h
 -
 
-/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/src/homography.cpp
+/home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/src/homography.cpp
 vikit/homography.h
 -
 opencv2/opencv.hpp
@@ -200,7 +188,7 @@ opencv2/opencv.hpp
 stdio.h
 -
 
-/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/src/img_align.cpp
+/home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/src/img_align.cpp
 vector
 -
 string
@@ -234,11 +222,11 @@ vikit/img_align.h
 sophus/se3.h
 -
 
-/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/src/math_utils.cpp
+/home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/src/math_utils.cpp
 vikit/math_utils.h
 -
 
-/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/src/omni_camera.cpp
+/home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/src/omni_camera.cpp
 stdio.h
 -
 math.h
@@ -246,7 +234,7 @@ math.h
 vikit/omni_camera.h
 -
 
-/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/src/performance_monitor.cpp
+/home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/src/performance_monitor.cpp
 vikit/performance_monitor.h
 -
 stdio.h
@@ -254,7 +242,7 @@ stdio.h
 stdexcept
 -
 
-/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/src/pinhole_camera.cpp
+/home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/src/pinhole_camera.cpp
 stdio.h
 -
 iostream
@@ -272,7 +260,7 @@ vikit/pinhole_camera.h
 vikit/math_utils.h
 -
 
-/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/src/robust_cost.cpp
+/home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/src/robust_cost.cpp
 numeric
 -
 algorithm
@@ -282,7 +270,7 @@ vikit/robust_cost.h
 vikit/math_utils.h
 -
 
-/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/src/user_input_thread.cpp
+/home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/src/user_input_thread.cpp
 stdio.h
 -
 vikit/user_input_thread.h
@@ -290,12 +278,24 @@ vikit/user_input_thread.h
 chrono
 -
 
-/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/src/vision.cpp
+/home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/src/vision.cpp
 vikit/vision.h
 -
 emmintrin.h
 -
 arm_neon.h
+-
+
+/home/alex/ros/svo_ws/src/Sophus/sophus/se3.h
+so3.h
+/home/alex/ros/svo_ws/src/Sophus/sophus/so3.h
+
+/home/alex/ros/svo_ws/src/Sophus/sophus/so3.h
+Eigen/Core
+-
+Eigen/StdVector
+-
+Eigen/Geometry
 -
 
 /usr/local/include/eigen3/Eigen/Cholesky

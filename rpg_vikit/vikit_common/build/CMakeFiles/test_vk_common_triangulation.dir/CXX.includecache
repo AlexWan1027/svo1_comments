@@ -44,19 +44,7 @@ stdio.h
 unistd.h
 -
 
-/home/alex/ros/svo_ws/src/Sophus/sophus/se3.h
-so3.h
-/home/alex/ros/svo_ws/src/Sophus/sophus/so3.h
-
-/home/alex/ros/svo_ws/src/Sophus/sophus/so3.h
-Eigen/Core
--
-Eigen/StdVector
--
-Eigen/Geometry
--
-
-/home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/test/test_triangulation.cpp
+/home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/test/test_triangulation.cpp
 string
 -
 stdint.h
@@ -76,6 +64,18 @@ vikit/timer.h
 vikit/sample.h
 -
 vikit/pinhole_camera.h
+-
+
+/home/alex/ros/svo_ws/src/Sophus/sophus/se3.h
+so3.h
+/home/alex/ros/svo_ws/src/Sophus/sophus/so3.h
+
+/home/alex/ros/svo_ws/src/Sophus/sophus/so3.h
+Eigen/Core
+-
+Eigen/StdVector
+-
+Eigen/Geometry
 -
 
 /usr/local/include/eigen3/Eigen/Cholesky

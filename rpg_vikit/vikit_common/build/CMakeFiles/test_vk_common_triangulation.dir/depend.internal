@@ -7,9 +7,9 @@ CMakeFiles/test_vk_common_triangulation.dir/test/test_triangulation.cpp.o
  ../include/vikit/pinhole_camera.h
  ../include/vikit/sample.h
  ../include/vikit/timer.h
+ /home/alex/cmake/AREngine2/src/svo1_note/rpg_vikit/vikit_common/test/test_triangulation.cpp
  /home/alex/ros/svo_ws/src/Sophus/sophus/se3.h
  /home/alex/ros/svo_ws/src/Sophus/sophus/so3.h
- /home/alex/ros/svo_ws/src/rpg_vikit/vikit_common/test/test_triangulation.cpp
  /usr/local/include/eigen3/Eigen/Cholesky
  /usr/local/include/eigen3/Eigen/Core
  /usr/local/include/eigen3/Eigen/Dense

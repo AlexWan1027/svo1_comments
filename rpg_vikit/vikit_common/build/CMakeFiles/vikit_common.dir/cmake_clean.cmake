@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "../lib/libvikit_common.pdb"
+  "../lib/libvikit_common.so"
   "CMakeFiles/vikit_common.dir/src/atan_camera.cpp.o"
   "CMakeFiles/vikit_common.dir/src/homography.cpp.o"
   "CMakeFiles/vikit_common.dir/src/img_align.cpp.o"
@@ -9,8 +11,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/vikit_common.dir/src/robust_cost.cpp.o"
   "CMakeFiles/vikit_common.dir/src/user_input_thread.cpp.o"
   "CMakeFiles/vikit_common.dir/src/vision.cpp.o"
-  "devel/lib/libvikit_common.pdb"
-  "devel/lib/libvikit_common.so"
 )
 
 # Per-language clean rules from dependency scanning.

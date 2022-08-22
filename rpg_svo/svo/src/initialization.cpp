@@ -29,6 +29,7 @@ namespace initialization {
 InitResult KltHomographyInit::addFirstFrame(FramePtr frame_ref)
 {
   reset();
+  // 提取当前图像金字塔每层图像中的fast特征点
   detectFeatures(frame_ref, px_ref_, f_ref_);
   if(px_ref_.size() < 100)
   {
@@ -36,12 +37,14 @@ InitResult KltHomographyInit::addFirstFrame(FramePtr frame_ref)
     return FAILURE;
   }
   frame_ref_ = frame_ref;
+  // 
   px_cur_.insert(px_cur_.begin(), px_ref_.begin(), px_ref_.end());
   return SUCCESS;
 }
 
 InitResult KltHomographyInit::addSecondFrame(FramePtr frame_cur)
 {
+  // 光流跟踪，获取当前图像中的特征点、特征点单位方向向量（相机坐标系单位深度的点）以及每对匹配特征点的视差
   trackKlt(frame_ref_, frame_cur, px_ref_, px_cur_, f_ref_, f_cur_, disparities_);
   SVO_INFO_STREAM("Init: KLT tracked "<< disparities_.size() <<" features");
 
@@ -50,9 +53,11 @@ InitResult KltHomographyInit::addSecondFrame(FramePtr frame_cur)
 
   double disparity = vk::getMedian(disparities_);
   SVO_INFO_STREAM("Init: KLT "<<disparity<<"px average disparity.");
+  // 视差不够则放弃当前帧
   if(disparity < Config::initMinDisparity())
     return NO_KEYFRAME;
-
+  // 假设第一帧和第二帧之间满足Homography
+  // 计算Homography，并通过Homography计算两帧之间的相对位姿
   computeHomography(
       f_ref_, f_cur_,
       frame_ref_->cam_->errorMultiplier2(), Config::poseOptimThresh(),
@@ -110,6 +115,7 @@ void detectFeatures(
     vector<Vector3d>& f_vec)
 {
   Features new_features;
+  // 金字塔图像提取fast点
   feature_detection::FastDetector detector(
       frame->img().cols, frame->img().rows, Config::gridSize(), Config::nPyrLevels());
   detector.detect(frame.get(), frame->img_pyr_, Config::triangMinCornerScore(), new_features);
@@ -118,7 +124,9 @@ void detectFeatures(
   px_vec.clear(); px_vec.reserve(new_features.size());
   f_vec.clear(); f_vec.reserve(new_features.size());
   std::for_each(new_features.begin(), new_features.end(), [&](Feature* ftr){
+    // 图像中的fast特征点位置
     px_vec.push_back(cv::Point2f(ftr->px[0], ftr->px[1]));
+    // 当前相机坐标系下fast特征点对应的单位球面上的单位方向向量
     f_vec.push_back(ftr->f);
     delete ftr;
   });

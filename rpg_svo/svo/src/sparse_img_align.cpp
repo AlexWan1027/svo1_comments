@@ -40,6 +40,12 @@ SparseImgAlign::SparseImgAlign(
   eps_ = 0.000001;
 }
 
+/**
+ * @description: sparse align核心
+ * @param {FramePtr} ref_frame
+ * @param {FramePtr} cur_frame
+ * @return {*}
+ */
 size_t SparseImgAlign::run(FramePtr ref_frame, FramePtr cur_frame)
 {
   reset();
@@ -65,6 +71,7 @@ size_t SparseImgAlign::run(FramePtr ref_frame, FramePtr cur_frame)
     have_ref_patch_cache_ = false;
     if(verbose_)
       printf("\nPYRAMID LEVEL %i\n---------------\n", level_);
+    // 继承了模板类NLLSSolver，该函数的实现在父类中
     optimize(T_cur_from_ref);
   }
   cur_frame_->T_f_w_ = T_cur_from_ref * ref_frame_->T_f_w_;
@@ -81,6 +88,11 @@ Matrix<double, 6, 6> SparseImgAlign::getFisherInformation()
   return I;
 }
 
+/**
+ * @description: 
+ * @param {*}
+ * @return {*}
+ */
 void SparseImgAlign::precomputeReferencePatches()
 {
   const int border = patch_halfsize_+1;

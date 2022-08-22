@@ -7,9 +7,9 @@ CMakeFiles/test_vk_common_camera.dir/test/test_camera.cpp.o: ../include/vikit/ma
 CMakeFiles/test_vk_common_camera.dir/test/test_camera.cpp.o: ../include/vikit/pinhole_camera.h
 CMakeFiles/test_vk_common_camera.dir/test/test_camera.cpp.o: ../include/vikit/sample.h
 CMakeFiles/test_vk_common_camera.dir/test/test_camera.cpp.o: ../include/vikit/timer.h
+CMakeFiles/test_vk_common_camera.dir/test/test_camera.cpp.o: ../test/test_camera.cpp
 CMakeFiles/test_vk_common_camera.dir/test/test_camera.cpp.o: /home/alex/ros/svo_ws/src/Sophus/sophus/se3.h
 CMakeFiles/test_vk_common_camera.dir/test/test_camera.cpp.o: /home/alex/ros/svo_ws/src/Sophus/sophus/so3.h
-CMakeFiles/test_vk_common_camera.dir/test/test_camera.cpp.o: ../test/test_camera.cpp
 CMakeFiles/test_vk_common_camera.dir/test/test_camera.cpp.o: /usr/local/include/eigen3/Eigen/Cholesky
 CMakeFiles/test_vk_common_camera.dir/test/test_camera.cpp.o: /usr/local/include/eigen3/Eigen/Core
 CMakeFiles/test_vk_common_camera.dir/test/test_camera.cpp.o: /usr/local/include/eigen3/Eigen/Dense

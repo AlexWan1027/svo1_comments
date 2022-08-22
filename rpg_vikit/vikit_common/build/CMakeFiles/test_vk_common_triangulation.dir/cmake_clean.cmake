@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
+  "../bin/test_vk_common_triangulation"
+  "../bin/test_vk_common_triangulation.pdb"
   "CMakeFiles/test_vk_common_triangulation.dir/test/test_triangulation.cpp.o"
-  "devel/lib/vikit_common/test_vk_common_triangulation"
-  "devel/lib/vikit_common/test_vk_common_triangulation.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

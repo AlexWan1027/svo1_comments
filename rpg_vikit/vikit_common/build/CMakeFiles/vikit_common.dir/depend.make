@@ -4,9 +4,9 @@
 CMakeFiles/vikit_common.dir/src/atan_camera.cpp.o: ../include/vikit/abstract_camera.h
 CMakeFiles/vikit_common.dir/src/atan_camera.cpp.o: ../include/vikit/atan_camera.h
 CMakeFiles/vikit_common.dir/src/atan_camera.cpp.o: ../include/vikit/math_utils.h
+CMakeFiles/vikit_common.dir/src/atan_camera.cpp.o: ../src/atan_camera.cpp
 CMakeFiles/vikit_common.dir/src/atan_camera.cpp.o: /home/alex/ros/svo_ws/src/Sophus/sophus/se3.h
 CMakeFiles/vikit_common.dir/src/atan_camera.cpp.o: /home/alex/ros/svo_ws/src/Sophus/sophus/so3.h
-CMakeFiles/vikit_common.dir/src/atan_camera.cpp.o: ../src/atan_camera.cpp
 CMakeFiles/vikit_common.dir/src/atan_camera.cpp.o: /usr/local/include/eigen3/Eigen/Cholesky
 CMakeFiles/vikit_common.dir/src/atan_camera.cpp.o: /usr/local/include/eigen3/Eigen/Core
 CMakeFiles/vikit_common.dir/src/atan_camera.cpp.o: /usr/local/include/eigen3/Eigen/Dense
@@ -290,9 +290,9 @@ CMakeFiles/vikit_common.dir/src/atan_camera.cpp.o: /usr/local/include/eigen3/Eig
 
 CMakeFiles/vikit_common.dir/src/homography.cpp.o: ../include/vikit/homography.h
 CMakeFiles/vikit_common.dir/src/homography.cpp.o: ../include/vikit/math_utils.h
+CMakeFiles/vikit_common.dir/src/homography.cpp.o: ../src/homography.cpp
 CMakeFiles/vikit_common.dir/src/homography.cpp.o: /home/alex/ros/svo_ws/src/Sophus/sophus/se3.h
 CMakeFiles/vikit_common.dir/src/homography.cpp.o: /home/alex/ros/svo_ws/src/Sophus/sophus/so3.h
-CMakeFiles/vikit_common.dir/src/homography.cpp.o: ../src/homography.cpp
 CMakeFiles/vikit_common.dir/src/homography.cpp.o: /usr/local/include/eigen3/Eigen/Cholesky
 CMakeFiles/vikit_common.dir/src/homography.cpp.o: /usr/local/include/eigen3/Eigen/Core
 CMakeFiles/vikit_common.dir/src/homography.cpp.o: /usr/local/include/eigen3/Eigen/Geometry
@@ -499,9 +499,9 @@ CMakeFiles/vikit_common.dir/src/img_align.cpp.o: ../include/vikit/pinhole_camera
 CMakeFiles/vikit_common.dir/src/img_align.cpp.o: ../include/vikit/robust_cost.h
 CMakeFiles/vikit_common.dir/src/img_align.cpp.o: ../include/vikit/timer.h
 CMakeFiles/vikit_common.dir/src/img_align.cpp.o: ../include/vikit/vision.h
+CMakeFiles/vikit_common.dir/src/img_align.cpp.o: ../src/img_align.cpp
 CMakeFiles/vikit_common.dir/src/img_align.cpp.o: /home/alex/ros/svo_ws/src/Sophus/sophus/se3.h
 CMakeFiles/vikit_common.dir/src/img_align.cpp.o: /home/alex/ros/svo_ws/src/Sophus/sophus/so3.h
-CMakeFiles/vikit_common.dir/src/img_align.cpp.o: ../src/img_align.cpp
 CMakeFiles/vikit_common.dir/src/img_align.cpp.o: /usr/local/include/eigen3/Eigen/Cholesky
 CMakeFiles/vikit_common.dir/src/img_align.cpp.o: /usr/local/include/eigen3/Eigen/Core
 CMakeFiles/vikit_common.dir/src/img_align.cpp.o: /usr/local/include/eigen3/Eigen/Dense
@@ -784,9 +784,9 @@ CMakeFiles/vikit_common.dir/src/img_align.cpp.o: /usr/local/include/eigen3/Eigen
 CMakeFiles/vikit_common.dir/src/img_align.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 
 CMakeFiles/vikit_common.dir/src/math_utils.cpp.o: ../include/vikit/math_utils.h
+CMakeFiles/vikit_common.dir/src/math_utils.cpp.o: ../src/math_utils.cpp
 CMakeFiles/vikit_common.dir/src/math_utils.cpp.o: /home/alex/ros/svo_ws/src/Sophus/sophus/se3.h
 CMakeFiles/vikit_common.dir/src/math_utils.cpp.o: /home/alex/ros/svo_ws/src/Sophus/sophus/so3.h
-CMakeFiles/vikit_common.dir/src/math_utils.cpp.o: ../src/math_utils.cpp
 CMakeFiles/vikit_common.dir/src/math_utils.cpp.o: /usr/local/include/eigen3/Eigen/Cholesky
 CMakeFiles/vikit_common.dir/src/math_utils.cpp.o: /usr/local/include/eigen3/Eigen/Core
 CMakeFiles/vikit_common.dir/src/math_utils.cpp.o: /usr/local/include/eigen3/Eigen/Geometry
@@ -985,9 +985,9 @@ CMakeFiles/vikit_common.dir/src/math_utils.cpp.o: /usr/local/include/eigen3/Eige
 CMakeFiles/vikit_common.dir/src/omni_camera.cpp.o: ../include/vikit/abstract_camera.h
 CMakeFiles/vikit_common.dir/src/omni_camera.cpp.o: ../include/vikit/math_utils.h
 CMakeFiles/vikit_common.dir/src/omni_camera.cpp.o: ../include/vikit/omni_camera.h
+CMakeFiles/vikit_common.dir/src/omni_camera.cpp.o: ../src/omni_camera.cpp
 CMakeFiles/vikit_common.dir/src/omni_camera.cpp.o: /home/alex/ros/svo_ws/src/Sophus/sophus/se3.h
 CMakeFiles/vikit_common.dir/src/omni_camera.cpp.o: /home/alex/ros/svo_ws/src/Sophus/sophus/so3.h
-CMakeFiles/vikit_common.dir/src/omni_camera.cpp.o: ../src/omni_camera.cpp
 CMakeFiles/vikit_common.dir/src/omni_camera.cpp.o: /usr/local/include/eigen3/Eigen/Cholesky
 CMakeFiles/vikit_common.dir/src/omni_camera.cpp.o: /usr/local/include/eigen3/Eigen/Core
 CMakeFiles/vikit_common.dir/src/omni_camera.cpp.o: /usr/local/include/eigen3/Eigen/Dense
@@ -1276,9 +1276,9 @@ CMakeFiles/vikit_common.dir/src/performance_monitor.cpp.o: ../src/performance_mo
 CMakeFiles/vikit_common.dir/src/pinhole_camera.cpp.o: ../include/vikit/abstract_camera.h
 CMakeFiles/vikit_common.dir/src/pinhole_camera.cpp.o: ../include/vikit/math_utils.h
 CMakeFiles/vikit_common.dir/src/pinhole_camera.cpp.o: ../include/vikit/pinhole_camera.h
+CMakeFiles/vikit_common.dir/src/pinhole_camera.cpp.o: ../src/pinhole_camera.cpp
 CMakeFiles/vikit_common.dir/src/pinhole_camera.cpp.o: /home/alex/ros/svo_ws/src/Sophus/sophus/se3.h
 CMakeFiles/vikit_common.dir/src/pinhole_camera.cpp.o: /home/alex/ros/svo_ws/src/Sophus/sophus/so3.h
-CMakeFiles/vikit_common.dir/src/pinhole_camera.cpp.o: ../src/pinhole_camera.cpp
 CMakeFiles/vikit_common.dir/src/pinhole_camera.cpp.o: /usr/local/include/eigen3/Eigen/Cholesky
 CMakeFiles/vikit_common.dir/src/pinhole_camera.cpp.o: /usr/local/include/eigen3/Eigen/Core
 CMakeFiles/vikit_common.dir/src/pinhole_camera.cpp.o: /usr/local/include/eigen3/Eigen/Dense
@@ -1562,9 +1562,9 @@ CMakeFiles/vikit_common.dir/src/pinhole_camera.cpp.o: /usr/local/include/eigen3/
 
 CMakeFiles/vikit_common.dir/src/robust_cost.cpp.o: ../include/vikit/math_utils.h
 CMakeFiles/vikit_common.dir/src/robust_cost.cpp.o: ../include/vikit/robust_cost.h
+CMakeFiles/vikit_common.dir/src/robust_cost.cpp.o: ../src/robust_cost.cpp
 CMakeFiles/vikit_common.dir/src/robust_cost.cpp.o: /home/alex/ros/svo_ws/src/Sophus/sophus/se3.h
 CMakeFiles/vikit_common.dir/src/robust_cost.cpp.o: /home/alex/ros/svo_ws/src/Sophus/sophus/so3.h
-CMakeFiles/vikit_common.dir/src/robust_cost.cpp.o: ../src/robust_cost.cpp
 CMakeFiles/vikit_common.dir/src/robust_cost.cpp.o: /usr/local/include/eigen3/Eigen/Cholesky
 CMakeFiles/vikit_common.dir/src/robust_cost.cpp.o: /usr/local/include/eigen3/Eigen/Core
 CMakeFiles/vikit_common.dir/src/robust_cost.cpp.o: /usr/local/include/eigen3/Eigen/Geometry
